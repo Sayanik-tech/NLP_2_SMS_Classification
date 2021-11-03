@@ -1,0 +1,37 @@
+<html>
+    
+    <head>
+
+        <body>
+
+            <header>
+
+                <div class="container">
+              
+                    <div id="brandname">
+                        Machine Learning app with Flask
+                    </div>
+    
+                    <h2> SMS Classification (SPAM or HAM) </h2>
+                 </div>
+            
+            </header>
+
+                   <p style="color :blue ; font-size : 20 ; text-align: center;"><b> Results of Classification </b></p>
+                  
+                
+
+                  {% if classification == 1%}
+                  <h2 style="color: rgb(4, 97, 4);"> HAM Messages </h2>
+                  {% elif classification ==0%}
+                  <h2 style="color: #ff0000;"> SPAM Messages </h2>
+                  {%endif%}
+            
+        </body>
+
+
+
+    </head>
+
+
+</html>
